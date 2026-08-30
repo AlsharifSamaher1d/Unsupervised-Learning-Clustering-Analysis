@@ -40,7 +40,7 @@ The analysis works with variables including:
 | City | Geographic grouping variable |
 | Season | Seasonal context for demand and weather patterns |
 
-The final clustering exercise aggregates the observations to the **city-day** level and uses average temperature, average electricity demand, and average humidity.
+The final clustering analysis aggregates the observations to the **city-day** level and uses average temperature, average electricity demand, and average humidity.
 
 ## Analysis Workflow
 
@@ -77,9 +77,9 @@ Two complementary approaches are used to evaluate the number of clusters:
 
 After clustering, the groups are summarized using their average feature values. This step turns cluster labels into interpretable descriptions rather than treating them simply as numerical IDs.
 
-## Final Exercise: Temperature, Demand & Humidity
+## Final Analysis: Temperature, Demand & Humidity
 
-The final exercise extends the clustering analysis by adding **average humidity** to average temperature and average electricity demand.
+The final analysis extends the clustering workflow by adding **average humidity** to average temperature and average electricity demand.
 
 The three clustering features are:
 
@@ -113,7 +113,7 @@ The highest score is obtained with **k = 2**, giving a **Silhouette Score of 0.4
 
 **Cluster 1** contains the majority of city-days and is characterized by much lower average electricity demand, a somewhat higher average temperature, and average humidity of approximately 0.68.
 
-The strongest distinction between the two clusters is therefore **electricity demand**. Average humidity is nearly identical across the groups (**0.69 vs. 0.68**), indicating that adding humidity did **not substantially change the clustering story** in this experiment.
+The strongest distinction between the two clusters is therefore **electricity demand**. Average humidity is nearly identical across the groups (**0.69 vs. 0.68**), indicating that adding humidity did **not substantially change the clustering story** in this analysis.
 
 ## Key Takeaways
 
@@ -121,7 +121,7 @@ The strongest distinction between the two clusters is therefore **electricity de
 - Feature scaling is important because clustering methods such as K-Means rely on distances.
 - Different clustering algorithms make different assumptions about cluster shape and density.
 - Cluster-quality metrics are useful for model selection, but interpretation of the resulting groups is equally important.
-- For the final three-feature experiment, **two clusters produced the strongest Silhouette Score** among the tested values.
+- For the final three-feature analysis, **two clusters produced the strongest Silhouette Score** among the tested values.
 - The final clusters were separated mainly by **electricity-demand level**, while humidity contributed little additional separation.
 
 ## Techniques & Libraries
